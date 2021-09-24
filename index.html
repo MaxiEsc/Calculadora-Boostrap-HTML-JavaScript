@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Aplicacion Calculadora</title>
+  </head>
+  <body>
+    <div class='container p-3 my-3 bg-dark text-white'>
+    <h1>Aplicacion Calculadora</h1>
+    <form id="forma">    
+
+      <div class='container p-3 my-3 border'>
+      <label for="operandoA">Operandor A</label>
+      <input type="number" class="form-control" 
+      placeholder="Escribe operando A" id="operandoA"/>
+      </div>
+
+      <div class='container p-3 my-3 border'>
+      <label for="operandoB">Operandor B</label>
+      <input type="number" class="form-control" 
+      placeholder="Escribe operando B" id="operandoB"/>
+      </div>      
+
+    </form>    
+
+    <button class="btn btn-primary" onclick="sumar()">Sumar</button>
+    <button class="btn btn-primary" onclick="restar()">Restar</button>
+    <button class="btn btn-primary" onclick="multiplica()">Multiplicar</button>
+    <button class="btn btn-primary" onclick="dividir()">Dividir</button>
+    <button class="btn btn-primary" onclick="modulo()">Modular</button>
+    <button class="btn btn-primary" onclick="exponente()">Exponencial</button>
+    <button class="btn btn-primary" onclick="raices()">Raiz de operadores</button>
+
+    <div class='container p-3 my-3 border'>
+      <label id="resultado"> Esperando respuesta </label>      
+      </div>  
+
+    <!-- <div class='container' id='resultado'></div> -->
+  </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src='js/motor.js'></script>  
+  </body>
+</html>
+
